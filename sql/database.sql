@@ -4,11 +4,11 @@ CREATE DATABASE "booksDatabase";
 
 CREATE TABLE books (
     "id" SERIAL PRIMARY KEY,
-    name VARCHAR(200) NOT NULL,
-    pages INTEGER NOT NULL,
-    createdAt TIMESTAMP NOT NULL,
-    updatedAt TIMESTAMP NOT NULL,
-    authorId INTEGER, 
+    "name" VARCHAR(200) NOT NULL,
+    "pages" INTEGER NOT NULL,
+    "createdAt" TIMESTAMP NOT NULL,
+    "updatedAt" TIMESTAMP NOT NULL,
+    "authorId" INTEGER, 
     FOREIGN KEY ("authorId") REFERENCES authors("id") ON DELETE SET NULL 
 );
 
