@@ -1,4 +1,4 @@
-CREATE DATABASE booksDatabase;
+CREATE DATABASE "booksDatabase";
 
 \c booksDatabase;
 
